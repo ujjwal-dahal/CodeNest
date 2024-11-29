@@ -1,0 +1,48 @@
+/* Styles for the FetchData component */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.container {
+  background-color: #f9f9f9; /* Light gray background for better readability */
+  border: 1px solid #ddd; /* Light border to distinguish the box */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  padding: 20px;
+  margin: 10px 0;
+  width: 80%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth animation on hover */
+}
+
+.container:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.container p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333; /* Dark text for better readability */
+}
+
+/* Style for the heading */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #444; /* Dark gray color for a professional look */
+  margin-bottom: 20px;
+}
+
+/* Style for the list container */
+ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+}
+
+.username{
+  display: flex;
+  gap: 4px;
+}

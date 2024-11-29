@@ -1,0 +1,106 @@
+.container {
+  max-width: 80%; 
+  height: auto;
+  height: 100%; 
+  margin: 20px auto; 
+  padding: 40px; 
+  border-radius: 8px; 
+  background-color: #001F3F; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.main-container{
+  height: 100vh !important;
+  width: 100vw;
+  margin-bottom: 50px;
+}
+
+
+.row {
+  display: grid; 
+  grid-template-columns: 60% 30% 10%; 
+  gap: 10px; 
+  margin-bottom: 15px; 
+}
+
+.formControl {
+  padding: 12px; 
+  border: 1px solid #ced4da; 
+  border-radius: 5px; 
+  font-size: 0.5rem; 
+  transition: border-color 0.3s ease; 
+}
+
+.date {
+  padding: 12px; 
+  border: 1px solid #ced4da; 
+  border-radius: 5px; 
+  font-size: 1rem; 
+  transition: border-color 0.3s ease; 
+}
+
+.button {
+  padding: 12px; 
+}
+
+.formControl:focus, 
+.date:focus {
+  outline: none; 
+  border-color: #007bff; 
+}
+
+.dataList {
+  list-style: none; 
+  padding: 0; 
+  margin-top: 20px; 
+}
+
+.dataItem {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: #f8f9fa; 
+  padding: 12px; 
+  border-radius: 5px; 
+  margin-bottom: 10px; 
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.deleteButton {
+  background-color: #dc3545; 
+  border: none; 
+  border-radius: 5px; 
+  padding: 8px 14px; 
+  color: #fff; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+  font-size: 0.9rem; 
+}
+
+.deleteButton:hover {
+  background-color: #c82333; 
+  transform: translateY(-2px); 
+}
+
+@media (max-width: 600px) {
+  .row {
+    grid-template-columns: 1fr; 
+  }
+  
+  .formControl, 
+  .date, 
+  .button {
+    width: 100%; 
+    margin-bottom: 10px; 
+  }
+}
+
+.formControl{
+  height: 50px !important;
+  font-size: 20px !important;
+  text-align: center !important;
+}
+
+.date{
+  height: 50px !important;
+}

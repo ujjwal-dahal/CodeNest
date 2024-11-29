@@ -1,0 +1,71 @@
+/* Main container styling for flexbox layout */
+.semi-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow containers to wrap */
+  justify-content: space-between; /* Space evenly between containers */
+  gap: 20px; /* Consistent spacing between containers */
+  padding: 20px; /* Add padding inside the container */
+  background-color: #11013b; /* Light background for contrast */
+  padding: 10px;
+}
+
+/* Individual box styling */
+.container {
+  width: 30%; /* 3 containers in a row */
+  margin-bottom: 20px; /* Vertical spacing */
+  border: 1px solid #e0e0e0; /* Light border */
+  border-radius: 12px; /* Larger rounded corners for a softer look */
+  padding: 20px; /* More padding for content */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); /* Slightly stronger shadow for depth */
+  background-color: #ffffff; /* Clean white background */
+  box-sizing: border-box; /* Include padding in width */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.container:hover {
+  transform: translateY(-7px); /* Lift the container slightly on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Deepen shadow on hover */
+}
+
+/* Paragraph styling for spacing and readability */
+.container p {
+  margin: 12px 0; /* Increased margin for more spacing between lines */
+}
+
+/* Styling for the ID section */
+.container .id {
+  font-size: 13px; /* Slightly larger font */
+  font-weight: 500; /* Medium font weight for better visibility */
+  color: #6c757d; /* Soft gray for less emphasis */
+  text-transform: uppercase; /* Uppercase to differentiate */
+}
+
+/* Styling for the title */
+.container .title {
+  font-size: 20px; /* Larger font for title */
+  font-weight: 600; /* Semi-bold for emphasis */
+  color: #343a40; /* Darker color for better focus */
+  margin-bottom: 10px; /* Add extra margin below title */
+}
+
+/* Styling for the body text */
+.container .body {
+  font-size: 15px; /* Slightly larger font for better readability */
+  line-height: 1.6; /* Increased line height for better readability */
+  color: #495057; /* Medium-dark gray for subtle contrast */
+}
+
+/* Responsive adjustments for tablets and smaller devices */
+@media (max-width: 768px) {
+  .container {
+    width: 48%; /* 2 containers per row on medium screens */
+  }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 480px) {
+  .container {
+    width: 100%; /* Full width for small screens */
+  }
+}

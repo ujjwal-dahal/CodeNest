@@ -1,0 +1,20 @@
+.main-container {
+  position: absolute; /* Position the dropdown relative to the parent */
+  background-color: #2c3e50; /* White background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 10; /* Ensure it's on top of other elements */
+  min-width: 160px; /* Minimum width for dropdown */
+  display: flex; /* Flex layout for links */
+  flex-direction: column; /* Stack links vertically */
+}
+
+.drop-link {
+  padding: 10px; /* Padding around links */
+  color: #333; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s; /* Transition effect for hover */
+}
+
+.drop-link:hover {
+  background-color: #f0f0f0; /* Change background on hover */
+}

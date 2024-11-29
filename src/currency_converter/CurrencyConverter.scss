@@ -1,0 +1,67 @@
+
+#main-container{
+  height: 90vh;
+  width: 80%;
+  margin: 50px 0;
+
+  > #input-box{
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+   > #input{
+    height: 50px !important;
+    width: 50% !important;
+    font-size: 20px !important;
+    text-align: start;
+    color: black !important;
+  }
+
+
+}
+
+#dropdown-container {
+  display: flex;
+  width: 60%;
+  align-items: center;
+    #dropdown1{
+      > select{
+        color: black !important;
+      }
+    }
+
+    #reverse {
+      button {
+        background-color: transparent;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out ;
+
+        > #reverse-icon{
+          height: 40px;
+          width: 40px;
+          transition: all 0.3s ease-in-out !important;
+
+          &:hover{
+              transform: scale(1.03) !important;
+          }
+        }
+        
+      }
+    }
+
+    #dropdown2{
+      > select {
+        color: black !important;
+      }
+    }
+
+    #amount {
+      > p{
+        color: green;
+      }
+    }
+
+    
+
+}
+}

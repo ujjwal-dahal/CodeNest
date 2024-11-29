@@ -1,0 +1,53 @@
+/* Base button styling */
+.btn {
+  padding: 10px 20px; /* Comfortable padding */
+  font-size: 16px; /* Readable font size */
+  font-weight: 500; /* Medium font weight */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 2px 5px;
+}
+
+/* Edit Button Style */
+.editBtn {
+  background-color: #007bff; /* Blue for edit */
+  color: white; /* White text */
+}
+
+.editBtn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Lift on hover */
+}
+
+/* Delete Button Style */
+.deleteBtn {
+  background-color: #dc3545; /* Red for delete */
+  color: white; /* White text */
+}
+
+.deleteBtn:hover {
+  background-color: #b02a37; /* Darker red on hover */
+  transform: translateY(-2px); /* Lift on hover */
+}
+
+/* Add Button Style */
+.addBtn {
+  background-color: #28a745; /* Green for add */
+  color: white; /* White text */
+}
+
+.addBtn:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: translateY(-2px); /* Lift on hover */
+}
+
+/* Optional: Disabled button styling */
+.btn:disabled {
+  background-color: #cfcfcf; /* Gray background for disabled buttons */
+  color: #6c757d; /* Gray text */
+  cursor: not-allowed; /* Disable pointer cursor */
+  box-shadow: none; /* Remove shadow */
+}

@@ -1,0 +1,157 @@
+:root{
+  --main-color : rgb(128, 0, 255);
+  --container : #001F3F;
+}
+
+
+.contactContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+
+.heroSection {
+  text-align: center;
+  background-color: var(--container);
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.heroSection h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.heroSection p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: white;
+}
+
+
+.ctaButton {
+  background-color: rgb(128, 0, 255);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: rgb(93, 27, 158);
+}
+
+
+.featuresSection {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.featuresSection h2 {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.featuresSection p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  color: white;
+}
+
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.featureItem {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featureItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.featureItem h3 {
+  font-size: 24px;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.featureItem p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+  .heroSection, .featuresSection {
+    padding: 40px 20px;
+  }
+
+  .ctaButton {
+    width: 100%;
+  }
+}
+
+
+.name-box{
+  width: 50%;
+}
+
+.contact-input{
+  width: 50% !important ; 
+  height: 50px !important ;
+  font-size: 20px !important;
+  text-align: center !important;
+}
+
+.contact-input:focus{
+  outline: none !important;
+  border: 2px solid var(--main-color) !important;
+}
+
+.heroSection > form{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.heroSection > form > .name-box{
+  display: flex;
+  gap: 10px;
+}
+
+.heroSection > form > textarea{
+  width: 50% !important ; 
+  height: 150px !important ;
+  font-size: 20px !important;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.heroSection > form > textarea:focus{
+  outline: none;
+  border: 2px solid var(--main-color);
+}

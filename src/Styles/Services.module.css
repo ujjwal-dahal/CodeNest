@@ -1,0 +1,151 @@
+:root {
+  --container: #001F3F;
+}
+
+.servicesContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.heroSection {
+  text-align: center;
+  background: var(--container);
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 30px rgba(128, 0, 255, 0.6);
+}
+
+.heroSection h1 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.heroSection p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: white;
+  text-align: center;
+}
+
+.ctaButton {
+  background-color: rgb(128, 0, 255);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: rgb(97, 17, 178);
+}
+
+.featuresSection {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.featuresSection h2 {
+  font-size: 30px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.featuresSection p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  color: #34495e;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.featureItem {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featureItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.boldText {
+  font-size: 27px;
+  color: #161D6F;
+}
+
+
+#offer-text {
+  font-weight: bold;
+  font-size: 40px;
+  display: inline-block; 
+  border-bottom: 3px solid #161D6F;
+  padding-bottom: 5px; 
+}
+
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 5px solid rgb(128, 0, 255);
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  border: 5px solid orange;
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.5), 0 0 25px rgba(255, 165, 0, 0.3);
+}
+
+.textOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.imgContainer:hover .textOverlay {
+  display: block;
+}
+
+.featureItem p {
+  font-size: 16px;
+  line-height: 1.5;
+}

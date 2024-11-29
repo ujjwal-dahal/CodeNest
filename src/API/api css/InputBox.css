@@ -1,0 +1,45 @@
+/* Container for input fields and button */
+.input-container {
+  display: flex;
+  flex-direction: column; /* Stack inputs vertically */
+  gap: 15px; /* Space between inputs and button */
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields styling */
+.input-container input[type="text"],
+.input-container textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+/* Textarea specific styling */
+.input-container textarea {
+  resize: vertical; /* Allow vertical resizing */
+  min-height: 100px; /* Minimum height for body text */
+}
+
+/* Focus state for both input and textarea */
+.input-container input[type="text"]:focus,
+.input-container textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+/* Button styling */
+.input-container .btn {
+  align-self: center;
+  width: 100px;
+}
