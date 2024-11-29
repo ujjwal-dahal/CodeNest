@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "./Css/LoginPage.css";
+import "./Css/Loginpage.css";
 import { myContext } from "../../App";
 import { toast } from "react-toastify";
 
